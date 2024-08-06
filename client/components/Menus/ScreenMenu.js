@@ -24,7 +24,7 @@ const ScreenMenu = () => {
             name="Home"
             component={Home}
             options={{
-              title: "Full Stack App",
+              title: "Finalé",
               headerRight: () => <HeaderMenu />,
             }}
           />

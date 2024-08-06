@@ -15,9 +15,8 @@ connectDB();
 const app = express();
 
 //middlewares
-app.use(cors());
 app.use(express.json());
-app.use(morgan("dev"));
+app.use(cors());
 
 //ROUTES
 app.use("/api/v1/auth", require("./routes/userRoutes"));
@@ -28,5 +27,5 @@ const PORT = process.env.PORT;
 
 //listen
 app.listen(PORT, () => {
-  console.log(`Server Runnning ${PORT}`.bgGreen.white);
+  console.log(`Server Runnning ${PORT}`);
 });

@@ -69,6 +69,7 @@ const loginController = async (req, res) => {
   try {
     const { email, password } = req.body;
     //validation
+    console.log(req)
     if (!email || !password) {
       return res.status(500).send({
         success: false,
